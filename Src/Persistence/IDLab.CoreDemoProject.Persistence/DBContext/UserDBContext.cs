@@ -5,6 +5,7 @@ using System.Linq;
 using Dapper;
 using IDLab.CoreDemoProject.Domain.Models;
 using static IDLab.CoreDemoProject.Persistence.Utility.SqlUtility;
+using static Newtonsoft.Json.JsonConvert;
 
 namespace IDLab.CoreDemoProject.Persistence.DBContext
 {
@@ -31,18 +32,15 @@ namespace IDLab.CoreDemoProject.Persistence.DBContext
             }
         }
 
-        public string CreateUser(User request){
+public string CreateUser(User request){
+
         using (sqlCon = GetConnection())
             {
                 string result="";
                 var com = new DynamicParameters();
                 
-                com.Add("@FirstName", request.FirstName);
-                com.Add("@LastName", request.LastName);
-                com.Add("@Email", request.Email);
-                com.Add("@MobileNo", request.MobileNo);
-                com.Add("@LocationName", request.LocationName);
-                com.Add("@InsertedBy",request.InsertedBy);
+                com.Add("@jsonData", SerializeObject(request));
+
                 try
                 {
                     result = sqlCon.Query<string>("usp_SampleCreateUser", com, commandType: CommandType.StoredProcedure).FirstOrDefault();

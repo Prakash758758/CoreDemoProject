@@ -1,0 +1,18 @@
+{
+    "countryState": [
+        {
+            "countryCode": "IN",
+            "stateCode": "AP",
+            "stateName": "Andhra Pradesh",
+            "en": "Andhra Pradesh",
+            "fr": "Andhra Pradesh"
+        },
+        {
+            "countryCode": "IN",
+            "stateCode": "KA",
+            "stateName": "Karnataka",
+            "en": "Karnataka",
+            "fr": "Karnataka"
+        }
+    ]
+}

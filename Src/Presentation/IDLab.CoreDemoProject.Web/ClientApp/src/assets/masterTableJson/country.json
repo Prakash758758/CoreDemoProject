@@ -1,0 +1,34 @@
+{
+    "country": [
+        {
+            "countryCode": "IN",
+            "countryName": "India",
+            "fr": "Inde",
+            "en": "India"
+        },
+        {
+            "countryCode": "ID",
+            "countryName": "Indonesia",
+            "fr": "Indonésie",
+            "en": "Indonesia"
+        },
+        {
+            "countryCode": "AU",
+            "countryName": "Australia",
+            "fr": "Australie",
+            "en": "Australia"
+        },
+        {
+            "countryCode": "BY",
+            "countryName": "Belarus",
+            "fr": "Biélorussie",
+            "en": "Belarus"
+        },
+        {
+            "countryCode": "RU",
+            "countryName": "Russia",
+            "fr": "Russie",
+            "en": "Russia"
+        }
+    ]
+}

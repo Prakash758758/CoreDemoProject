@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\IDLab.CoreDemoProject.Domain\IDLab.CoreDemoProject.Domain.csproj" />
+    <ProjectReference Include="..\..\Application\IDLab.CoreDemoProject.Application\IDLab.CoreDemoProject.Application.csproj" />
+  </ItemGroup>
+
+
+</Project>
